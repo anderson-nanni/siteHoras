@@ -7,6 +7,7 @@ body {
 footer,
 header {
     color: white;
+    margin-top: 60px;
 }
 
 section {
@@ -14,7 +15,8 @@ section {
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
     margin: auto;
-    width: 500px;
+    width: 600px;
+    margin-top: 100px;
 
 }
 section div {
@@ -28,7 +30,7 @@ section p {
 #img {
     padding-bottom: 20px;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
 }
 

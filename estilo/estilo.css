@@ -15,12 +15,10 @@ section {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
     margin: auto;
     width: 500px;
-    height: 500px;
 
 }
 section div {
     margin: 25px;
-    padding: 25px;
 }
 section p {
     font:  14pt Verdana;
@@ -34,7 +32,3 @@ section p {
     height: 300px;
 }
 
-#dropdown {
-    font-size: 24px;
-    padding: 5px;
-}

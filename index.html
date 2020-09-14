@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="estilo/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Tabuadas</h1>
     </header>
 
     <section>
         <div>
-            <p id="txth"></p>
+            <label for="numero">Numero: </label>
+            <input type="number" id="numero">
+            <input type="button" value="Gerar tabuada" onclick="gerar()">
         </div>
-        <div id="imgs">
-            <img id="img" src="imagens/pexels-pixabay-355465 (1).jpg" alt="">
+        <div>
+            <select name="tab" id="dropdown" size="10">
+            </select>
         </div>
     </section>
 

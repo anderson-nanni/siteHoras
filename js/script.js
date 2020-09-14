@@ -1,21 +1,22 @@
-function carregar () {
-    var txth = document.getElementById("txth")
-    var imgs = document.getElementById("img")
+function gerar () {
+    const dropdown = document.getElementById('dropdown');
+    const pNumero = document.getElementById('numero');
+    let item = document.getElementById('option');
+    
 
-    var data = new Date()
-    var horas = data.getHours()
-    txth.innerHTML = `Agora sao ${horas} horas.`
+    if (pNumero.value.length == 0) {
+        alert('Digite um numero no campo!');
+    } else{
+        let n = Number(pNumero.value);
+        dropdown.innerText = '';
+        for (i = 1;i <= 10; i++) {
 
-    if (horas >= 6 && horas < 12) {
-        imgs.src = 'imagens/pexels-saif-selim-641038.jpg'
-        document.body.style.background = '#e2cd9f'
-    } else if (horas >= 12 && horas < 18) {
-        imgs.src = 'imagens/pexels-anderson-martins-2386144.jpg'
-        document.body.style.background = '#b9846f'
-    } else if  (horas ) {
-        imgs.src = 'imagens/pexels-pixabay-355465 (1).jpg'
-        document.body.style.background = '#515154'
+            let item = document.createElement('option');
+            item.text += `${n} X ${i} = ${n*i}`;
+            dropdown.appendChild(item);
 
+        }   
     }
-}
 
+    
+}
